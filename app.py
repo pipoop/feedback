@@ -4,7 +4,9 @@ from pymongo import MongoClient
 
 def main():    
     st.set_page_config(page_title="Send feedback", page_icon=":penguin:")
-    st.title('Share your feedback, questions, ideas')
+    st.title('Join me to shape the next AI roadmap')
+    st.subheader('Share your feedback, questions, ideas')
+
 
     # this markdown is for hiding "github" button
     st.markdown("<style>#MainMenu{visibility:hidden;}</style>", unsafe_allow_html=True)
@@ -19,7 +21,7 @@ def main():
     unsafe_allow_html=True
     )
 
-    feedback = st.text_input("Please write your feedback")
+    feedback = st.text_input("Please write your feedback, your name and email (optional)")
     if st.button('Submit'):
         if feedback:
             feedbacks = connect_2_db()
