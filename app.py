@@ -4,7 +4,7 @@ from pymongo import MongoClient
 
 def main():    
     st.set_page_config(page_title="Send feedback", page_icon=":penguin:")
-    st.title('Join me to shape the next AI App roadmap :penguin:')
+    st.title(':penguin: Join me to shape the next AI roadmap')
     st.subheader('Share your feedback, questions, ideas')
 
     st.markdown("Demo by [Qiang Li](https://www.linkedin.com/in/qianglil/). All rights reserved.")
