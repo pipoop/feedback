@@ -4,9 +4,10 @@ from pymongo import MongoClient
 
 def main():    
     st.set_page_config(page_title="Send feedback", page_icon=":penguin:")
-    st.title('Join me to shape the next AI roadmap')
+    st.title('Join me to shape the next AI App roadmap :penguin:')
     st.subheader('Share your feedback, questions, ideas')
 
+    st.markdown("Demo by [Qiang Li](https://www.linkedin.com/in/qianglil/). All rights reserved.")
 
     # this markdown is for hiding "github" button
     st.markdown("<style>#MainMenu{visibility:hidden;}</style>", unsafe_allow_html=True)
